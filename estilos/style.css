@@ -14,9 +14,16 @@
 body, html {
     color: white;
     font-family: 'Netflix regular';
+    background-color: black;
 }
-section#inicio {
-    background-image: url(../imagens/Netflix.jpg);
+section {
+    border-bottom: 8px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(112, 110, 110);
+}
+div#inicio {
+    background: url(../imagens/netflix.jpg) no-repeat;
+    background-size: cover;
 }
 header {
     display: flex;
@@ -31,32 +38,33 @@ header h1 {
     padding-left: 50px;
     padding-top: 15px;
 }
-header p {
-    margin: 20px 40px 0px 0px;
-}
 header select {
     background-color: black;
     color: white;
-    padding: 7px;
+    padding: 8px;
     margin-right: 20px;
-
+    font-size: 15px;
 }
 header a {
     background-color: red;
     color: white;
     padding: 7px 20px;
     text-decoration: none;
-    font-weight: bolder;
+    font-size: 15px;
+    margin-right: 50px;
+}
+section{
+    text-align: center;
 }
 section#first {
     text-align: center;
 }
-div#campocentral {
-    width: 65vw;
+div.campocentral {
+    width: 45vw;
     margin: auto;
 }
-section#first h1 {
-    font-size: 2.5em;
+h1 {
+    font-size: 3em;
 }
 section#first p {
     font-size: 1.2em;
@@ -68,9 +76,47 @@ section#first h4 {
     font-family: 'Netflix light';
 
 }
+div#conteiner {
+    background-color: green;
+    width: 45vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
 input#email {
     padding: 20px 5px;
-    display: block;
-    margin: auto;
+    width: 72%
+}
+input#botao {
+    background-color: red;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.7em;
+    border: none;
+    float: right;
+}
+section#topic3 {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    padding: 30px;
+}
+section#topic3 .campocentral {
+    text-align: left;
+    width: 533px
+
+}
+img {
+    height: 400px;
+}
+section.topic4 div {
+    background-color: #303030;
     width: 60vw;
+    padding: 20px 30px;
+    margin: 10px auto;
+    font-size: 1.7em;
+    text-align: left;
+}
+p {
+    font-size: 25px;
 }

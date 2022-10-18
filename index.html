@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <section id="inicio">
+    <div id="inicio">
         <header>
             <h1>Netflix</h1>
             <p>
@@ -17,39 +17,45 @@
                     <option value="">English</option>
                 </select>
                 <a href="login.html" rel="next" target="_self">Entrar</a>
-                    </header>
+        </header>
             </p>
         <main>
             <section id="first">
-                <div id="campocentral">
-                    <h1>Filmes, Series e muito mais. Sem limites</h1>
-                    <h4>Assista onde quiser. Cancele quando quiser.</h4>
-                    <p>
-                        Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura
-                    </p>
+                <div class="campocentral">
+                        <h1>Filmes, Series e muito mais. Sem limites</h1>
+                        <h4>Assista onde quiser. Cancele quando quiser.</h4>
+                        <p>
+                            Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura
+                        </p>
                 </div>
                 <form action="" autocomplete="on">
-                    <input type="email" name="email" id="email" placeholder="Email" minlength="8" autocomplete="email">
-                    <input type="submit" value="Vamos lá >">
+                    <div id="conteiner">
+                        <input type="email" name="email" id="email" placeholder="Email" minlength="8" autocomplete="email">
+                        <input type="submit" id="botao" value="Vamos lá >">
+                    </div>
                 </form>
             </section>
-    </section>
+    </div>
         <section>
             <h1>Aproveite na TV.</h1>
-            <h3>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.
-            </h3>
+            <p class="campocentral">Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.
+            </p>
             <aside></aside>
         </section>
-        <section>
-            <h1>Baixe séries para assistir offline.</h1>
-            <h3>Salve seus títulos favoritos e sempre tenha algo para assistir.
-            </h3>
-            <aside></aside>
+        <section id="topic3">
+            <div class="campocentral">
+                <h1>Baixe séries para assistir offline.</h1>
+                <p>Salve seus títulos favoritos e sempre tenha algo para assistir.
+                </p>
+            </div>
+            <aside>
+                <img src="imagens/s_things.jpg" alt="">
+            </aside>
         </section>
-        <section>
+        <section class="topic4">
             <h1>Perguntas frequentes</h1>
 
-            <div>Oque é a Netflix?</div>
+            <div>O que é a Netflix?</div>
             <div>Quanto custa a Netflix</div>
             <div>Onde posso assistir?</div>
             <div>Como faço para cancelar?</div>
@@ -60,10 +66,12 @@
                 Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura
             </p>
             <form action="" autocomplete="on">
-                <input type="email" name="email" id="email" placeholder="Email" minlength="8" autocomplete="email">
-                <input type="submit" value="Vamos lá >">
+                <div id="conteiner">
+                    <input type="email" name="email" id="email" placeholder="Email" minlength="8" autocomplete="email">
+                    <input type="submit" id="botao" value="Vamos lá >">
+                </div>
             </form>
-        </section>
+    </section>
         <footer></footer>
     </main>
 </body>
