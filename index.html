@@ -29,18 +29,20 @@
                         </p>
                 </div>
                 <form action="" autocomplete="on">
-                    <div id="conteiner">
+                    <div class="conteiner">
                         <input type="email" name="email" id="email" placeholder="Email" minlength="8" autocomplete="email">
                         <input type="submit" id="botao" value="Vamos lá >">
                     </div>
                 </form>
             </section>
     </div>
-        <section>
-            <h1>Aproveite na TV.</h1>
-            <p class="campocentral">Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.
-            </p>
-            <aside></aside>
+        <section id="topic2">
+            <div class="campocentral">
+                <h1>Aproveite na TV.</h1>
+                <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.
+                </p>
+            </div>
+            <aside><img src="imagens/tv.png" alt=""></aside>
         </section>
         <section id="topic3">
             <div class="campocentral">
@@ -55,24 +57,42 @@
         <section class="topic4">
             <h1>Perguntas frequentes</h1>
 
-            <div>O que é a Netflix?</div>
-            <div>Quanto custa a Netflix</div>
-            <div>Onde posso assistir?</div>
-            <div>Como faço para cancelar?</div>
-            <div>O que eu posso assistir na Netflix</div>
-            <div>A Netflix é adequada para crianças?</div>
+            <div onclick="abrir_menu()">
+                O que é a Netflix?
+                <p class="escondido">
+                    A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.
 
-            <p>
-                Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura
-            </p>
-            <form action="" autocomplete="on">
-                <div id="conteiner">
-                    <input type="email" name="email" id="email" placeholder="Email" minlength="8" autocomplete="email">
-                    <input type="submit" id="botao" value="Vamos lá >">
-                </div>
-            </form>
+                    Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+                </p>
+            </div>
+            <div class="perguntas" onclick="abrir_menu()">
+                Quanto custa a Netflix?
+                <p class="escondido">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis consequuntur illum, tempora facere officiis magni alias natus incidunt ad inventore expedita. Labore modi quas officia sequi maiores, tempora amet dolorem.</p>
+            </div>
+            <div class="perguntas" onclick="abrir_menu()">
+                Onde posso assistir?
+                <p class="escondido">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis consequuntur illum, tempora facere officiis magni alias natus incidunt ad inventore expedita. Labore modi quas officia sequi maiores, tempora amet dolorem.</p>
+            </div>
+            <div class="perguntas" onclick="abrir_menu()">
+                Como faço para cancelar?
+                <p class="escondido">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis consequuntur illum, tempora facere officiis magni alias natus incidunt ad inventore expedita. Labore modi quas officia sequi maiores, tempora amet dolorem.</p>
+            </div>
+            <div class="perguntas" onclick="abrir_menu()">
+                O que eu posso assistir na Netflix?
+                <p class="escondido">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis consequuntur illum, tempora facere officiis magni alias natus incidunt ad inventore expedita. Labore modi quas officia sequi maiores, tempora amet dolorem.</p>
+            </div>
+            <div class="perguntas" onclick="abrir_menu()">
+                A Netflix é adequada para crianças?
+                <p class="escondido">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis consequuntur illum, tempora facere officiis magni alias natus incidunt ad inventore expedita. Labore modi quas officia sequi maiores, tempora amet dolorem.</p>
+            </div>
     </section>
         <footer></footer>
     </main>
+    <script>
+        var conteudo = document.getElementsByClassName('escondido')
+        function abrir_menu() {
+            conteudo.style.display = 'none'
+        }
+    </script>
 </body>
 </html>

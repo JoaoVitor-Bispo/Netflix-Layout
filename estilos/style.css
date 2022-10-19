@@ -9,12 +9,13 @@
     src: url(../fontes/NetflixSans-Light.otf);
 }
 * {
+    margin: 0px;
     box-sizing: border-box;
 }
 body, html {
+    background-color: black;
     color: white;
     font-family: 'Netflix regular';
-    background-color: black;
 }
 section {
     border-bottom: 8px;
@@ -34,7 +35,7 @@ header h1 {
     color: red;
     font-size: 3em;
     margin: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
     padding-left: 50px;
     padding-top: 15px;
 }
@@ -44,14 +45,17 @@ header select {
     padding: 8px;
     margin-right: 20px;
     font-size: 15px;
+    margin-top: 30px;
 }
 header a {
     background-color: red;
     color: white;
     padding: 7px 20px;
-    text-decoration: none;
     font-size: 15px;
+    font-weight: 600;
     margin-right: 50px;
+    margin-top: 30px;
+    text-decoration: none;
 }
 section{
     text-align: center;
@@ -60,23 +64,26 @@ section#first {
     text-align: center;
 }
 div.campocentral {
-    width: 45vw;
+    width: 46vw;
     margin: auto;
 }
 h1 {
+    margin-bottom: 20px;
     font-size: 3em;
 }
 section#first p {
     font-size: 1.2em;
     font-family: 'Netflix regular';
     font-weight: 100;
+    margin-bottom: 15px;
 }
 section#first h4 {
     font-size: 1.5em;
     font-family: 'Netflix light';
+    margin-bottom: 20px;
 
 }
-div#conteiner {
+div.conteiner {
     background-color: green;
     width: 45vw;
     margin: auto;
@@ -96,6 +103,19 @@ input#botao {
     border: none;
     float: right;
 }
+section#topic2 {
+    display: flex;
+    align-items: center;
+    margin: 40px 0px;
+}
+section#topic2 .campocentral {
+    text-align: left;
+    width: 533px
+}
+section#topic2 h1 {
+    margin-bottom: 20px;
+}
+
 section#topic3 {
     display: flex;
     flex-flow: row-reverse nowrap;
@@ -104,10 +124,16 @@ section#topic3 {
 section#topic3 .campocentral {
     text-align: left;
     width: 533px
-
 }
 img {
     height: 400px;
+}
+section.topic4 {
+    margin-top: 50px;
+}
+section.topic4 h1 {
+    margin-bottom: 50px;
+
 }
 section.topic4 div {
     background-color: #303030;
@@ -116,6 +142,12 @@ section.topic4 div {
     margin: 10px auto;
     font-size: 1.7em;
     text-align: left;
+}
+section.topic4 div:hover {
+    cursor: pointer;
+}
+p.escondido {
+    display: none;
 }
 p {
     font-size: 25px;
