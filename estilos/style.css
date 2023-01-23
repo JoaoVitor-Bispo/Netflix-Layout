@@ -104,6 +104,9 @@ input#botao {
     border: none;
     float: right;
 }
+input#botao:hover {
+    cursor: pointer;
+}
 section#topic2 {
     display: flex;
     flex-flow: row nowrap;
@@ -153,8 +156,10 @@ section.topic4 div {
 section.topic4 div:hover {
     cursor: pointer;
 }
+
 p.escondido {
     display: none;
+    padding-top: 10px;
 }
 
 p {
