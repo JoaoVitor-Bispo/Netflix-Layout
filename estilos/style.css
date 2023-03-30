@@ -119,8 +119,6 @@ section#topic2 .campocentral {
 section#topic2 h1 {
     margin-bottom: 20px;
 }
-section#topic2 aside {
-}
 img#img2 {
     height: 350px;
     margin-right: 100px;
@@ -156,7 +154,10 @@ section.topic4 div {
 section.topic4 div:hover {
     cursor: pointer;
 }
-
+.perguntas {
+    display: flex;
+    justify-content: space-between;
+}
 p.escondido {
     display: none;
     padding-top: 10px;
