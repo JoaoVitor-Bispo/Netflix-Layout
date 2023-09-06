@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @font-face {
     font-family: 'Netflix regular';
     src: url(../fontes/NetflixSans-Regular.otf);
@@ -12,6 +11,11 @@
     margin: 0px;
     box-sizing: border-box;
 }
+/* @keyframes rotate {
+    to {
+        transform: rotate(90deg);
+    }
+} */
 body, html {
     background-color: black;
     color: white;
@@ -143,7 +147,7 @@ section.topic4 h1 {
     margin-bottom: 50px;
 
 }
-section.topic4 div {
+section.topic4 > div {
     background-color: #303030;
     width: 60vw;
     padding: 20px 30px;
@@ -154,7 +158,7 @@ section.topic4 div {
 section.topic4 div:hover {
     cursor: pointer;
 }
-.perguntas {
+.perguntas > div{
     display: flex;
     justify-content: space-between;
 }
